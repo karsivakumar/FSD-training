@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML part-1 assignment</title>
+    <link rel="stylesheet" type="text/css" href="assignment-1-validations.css">
+</head>
+<body>
+    <p>
+        Fields marked (*) are required
+    </p>
+    <form  action="#" method="GET">
+        <fieldset>
+            <legend>
+                Input Text Field Validation
+            </legend>
+            <br>
+            First Name *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text"  size="50 px" name="firstName" placeholder="First Name"  required="true">
+            <br>
+            <br>
+            Last Name *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text"  size="50 px" name="lastName" placeholder="Last Name"  required="true">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Email and URL Validation
+            </legend>
+            <br>
+            Email *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="email" size="50 px" name="emailId" placeholder="e.g. swapnil@example.com">
+            <br>
+            <br>
+            Website *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="url" size="50 px" name="website" placeholder="e.g. http://www.html5andcss3.org">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Mobile or Phone Number Validation
+            </legend>
+            <br>
+            Mobile *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" size="50 px" name="phoneNumber" placeholder="please enter a ten digit phone number">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Drop Down Box Validation
+            </legend>
+            <br>
+            Country *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <select name="country">
+                <option value="India">India</option>
+                <option value="Mexico">Mexico</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+              </select>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Number Validation with Specific Range
+            </legend>
+            <br>
+            Post Code *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" size="50 px" name="postalCode" placeholder = "">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                TextArea Validation
+            </legend>
+            <br>
+            Address *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="textarea" rows = "5" columnns="100" size = "50px" name="Address" placeholder = "">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                CheckBox and Radio Button Validation
+            </legend>
+            <br>
+            Agree to T & C *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="checkbox" name="agreeToTandC" value="agree" placeholder = "">
+            <br>
+            General *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="radio" name="general" value="male"> Male
+            <input type="radio" name="general" value="female"> Female
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Password Validation Using Pattern
+            </legend>
+            <br>
+            Password *&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="password" size="50 px" name="passwrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <div class="submitalign">
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>
