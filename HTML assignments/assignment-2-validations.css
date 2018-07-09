@@ -1,0 +1,12 @@
+table {
+    display: table;
+    border-style: double;
+    border-color: black;
+    padding: 2px;
+}
+
+td {
+    border-style: double;
+    border-color: black;
+    padding: 10px;
+}
