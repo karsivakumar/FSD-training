@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML part-4 assignment</title>
+    <link rel="stylesheet" type="text/css" href="assignment-4-drag and drop.css">
+    <script type="text/javascript" src="assignment-4-drag and drop.js"></script>
+</head>
+<body>
+<h1 class="center">HTML5 Drag and Drop</h1>
+<h3>Drag list of Items on dust bin</h3>
+<div>
+    <img src="https://southernlot.com/wp-content/uploads/2017/12/FD1004-1.jpg" height="300" width="300" draggable="false" ondragover="allowDrop(event)" ondrop="drop(event)">
+    <ul id="ulelem" item-height="300px">
+        <li class="liclass" id="li1" draggable="true" ondragstart="drag(event)">
+            Music
+        </li>
+        <li class="liclass"  id="li2" draggable="true" ondragstart="drag(event)">
+            Docs
+        </li>
+        <li class="liclass"  id="li3" draggable="true" ondragstart="drag(event)">
+            Videos
+        </li>
+        <li class="liclass" id="li4" draggable="true" ondragstart="drag(event)">
+            Images
+        </li>
+        <li class="liclass" id="li5" draggable="true" ondragstart="drag(event)">
+            Others
+        </li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h1{
+    text-align: center;
+    color: green;
+}
+h3{
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    margin: 0%;
+    width: 300 px;
+    height: 300 px;
+}
+ul {
+    float: right;
+    vertical-align: top;
+    padding-right: 250px;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    list-style-type: none;
+    margin: 0 0;
+}
+li{
+    background-color: green;
+    width: 200 px;
+    padding: 5%;
+    margin: 7px 0 7px 0;
+}
