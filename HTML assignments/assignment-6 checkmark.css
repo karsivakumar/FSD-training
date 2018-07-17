@@ -1,0 +1,129 @@
+.initial1{
+
+    margin: 15px;
+    font-size: 14px;
+    color: #656666;
+    width: 50%
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-top-color: #929494;
+    background-color: #fff;
+    border-bottom-color: #929494;
+    /* border-radius: 4px; */
+     
+    padding: 10px 20px 10px;
+    border-style: solid;
+}
+
+.control-label{
+    display: inline-block;
+    font-weight: bold;
+    width: 150px;
+}
+
+.control-label1{
+    vertical-align: bottom;
+    display: inline-block;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+}
+
+.form-control{
+        margin: 10px;
+        width: 50%;
+        display: inline;
+}
+
+.form-control-range{
+        margin: 10px;
+        width: 50%
+}
+
+.form-field-group{
+    margin: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-style: solid;
+    border-bottom-color: #e8eaed;
+    vertical-align: middle;
+}
+
+.form-group-title{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-bottom-color: #929494;
+    border-style: solid;
+    color: black;
+    display: block;
+    margin: 15px;
+    font-size: large;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.form-group-title span {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    font-size: x-small;
+    color: red;
+    font-weight: normal;
+}
+
+.form-control-feedback{
+      display: none;
+    }
+
+.asterisk_input:after {
+        content:" *"; 
+        color: #e32;
+        position: absolute; 
+        margin: 0px 0px 0px -25px; 
+        font-size: xx-large;
+        padding: 0 5px 0 0; 
+}
+
+/*     
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h1{
+    text-align: center;
+    color: green;
+}
+h3{
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    margin: 0%;
+    width: 300 px;
+    height: 300 px;
+}
+ul {
+    float: right;
+    vertical-align: top;
+    padding-right: 250px;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    list-style-type: none;
+    margin: 0 0;
+}
+li{
+    background-color: green;
+    width: 200 px;
+    padding: 5%;
+    margin: 7px 0 7px 0;
+} */
