@@ -2,12 +2,10 @@
 <html>
 <head>
     <title>HTML5 contact Form</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assignment-6 checkmark.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="assignment-6 checkmark.css"></link>
 </head>
 <body>
@@ -15,28 +13,27 @@
         <form id="form1" class="initial1">
             <div class="form-group-title">contact Us<span>* Denotes Required Field</span>
             </div>
-            <div class="form-group has-feedback">
-                <p class="form-field-group">
-                <label class="control-label" for="name1">Name:</label>
-                <input type="text" size="40" class="form-control" name="name1" id="name1" placeholder="John Doe" required>
-                <span class="asterisk_input"></span>
-                </p>
-                <p class="form-field-group">
-                <label class="control-label" for="email1">Email:</label>
-                <input type="email" class="form-control" size="30" name="email1" id="email1" placeholder="john_doe@example.com" required>
-                <span class="asterisk_input">    
-                </p>
-                <p class="form-field-group">
+            <div class="form-group1">
+                <div class="form-group inner-addon right-addon">
+                    <label class="control-label" for="name1">Name:</label>
+                    <input type="text" size="40" class="form-control" name="name1" id="name1" placeholder="John Doe" required>
+                    <span id="name1_asterisk" class="asterisk_input"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="email1">Email:</label>
+                    <input type="email" class="form-control" size="30" name="email1" id="email1" placeholder="john_doe@example.com" required>
+                    <span id="email1_asterisk" class="asterisk_input">
+                </div>
+                <div class="form-group">
                 <label class="control-label" for="website1">Website:</label>
                 <input type="text" class="form-control" name="website1" id="website1" placeholder="http://johndoe.com" required>
-                <span class="asterisk_input">    
-                </p>
-                <p class="form-field-group">
+                <span id="website1_asterisk" class="asterisk_input">
+                </div>
+                <div class="form-group">
                 <label class="control-label1" for="message1">Message:</label>
                 <textarea class="form-control" name="message1" id="message1" rows="10" cols="30" required></textarea>
-                <span class="asterisk_input">
-                </p>
-                <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+                <span id="message1_asterisk" class="asterisk_input1">
+                </div>
             </div>
             <button type="button" class="btn btn-primary btn-block">Submit Form</button>
         </form>
