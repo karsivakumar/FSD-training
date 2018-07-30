@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript assignments</title>
+    <script type="text/javascript" src="assignment-8 javascript.js"></script>
+</head>
+<body>
+    <div>
+        <p>1. Problem 1 - Display current day and time</p>
+        <p>Today is : <span id="dayofweek"></span></p>
+        <p>Current Time is : <span id="hourofday"></span> <span id="partofday"></span> : <span id="minuteofday"></span> : <span id="secondofday"></span></p>
+        <p>2. Problem 2 - Get and Display current date in format</p>
+        <p>
+            Choose the date format you need: <select id="dateformat" onchange="curDateFunc()">
+                <option> </option>
+                <option>mm-dd-yyyy</option>
+                <option>mm/dd/yyyy</option>
+                <option>dd-mm-yyyy</option>
+                <option>dd/mm/yyyy</option>
+            </select>
+        </p>
+        <p>The Date Today is : <span id="todaysdate"></span></p>
+    </div>
+    <div>
+        <p>3. Problem 3 - Enter your Guess Number between 1 and 10 to check if you are lucky!</p>
+        <p>
+                Enter the guess number from 1 to 10: <input type="text" id="inputNumber" onchange="inputNumberFun()">
+                <br>
+                <br>
+                <span id="resulttxt">Game result will be displayed here!!</span>
+        </p>
+    </div>
+    <div>
+            <p>4. Problem 4 - Calculate Multiplication and Division!</p>
+            <p>
+                    Number 1 : <input type="text" id="MathInput1">
+                    <br>
+                    <br>
+                    Number 2 : <input type="text" id="MathInput2">
+                    <br>
+                    <br>
+                    <button id="multiplyButton" onclick="multiplyFunc()">Multiply</button>
+                    <span></span>
+                    <button id="divisionButton" onclick="divideFunc()">Division</button>
+                    <br>
+                    <br>
+                    Result of calculation : <span id="resultcalc">0</span>
+            </p>
+        </div>
+        <div>
+                <p>5. Problem 5 - Get Window URL!</p>
+            <p>
+                URL of current window is : <span id="urlInfo"> </span>
+            </p>
+        </div>
+        <div>
+                <p>6. Problem 6 - capitalize First Letter of First work of given String!</p>
+            <p>
+                Please Enter the string : <input id="lCaseStr" type="text" onchange="uCaseFunc()">
+            <br>
+            <br>
+                The Result String is <span id="uCaseStr"> </span>
+            </p>
+        </div>
+        <div>
+            <p>7. Problem 7 - check if even number of P and S present!</p>
+            <p>
+                Please Enter the string : <input id="inputStr" type="text" onchange="checkLetFunc()">
+            <br>
+            <br>
+                Output: <span id="checkLetOut"></span>
+            </p>
+        </div>
+        <div>
+                <p>8. Problem 8 - create 4 copies of last three characters!</p>
+                <p>
+                    Please Enter the input string : <input id="copyInp" type="text" onchange="copyFunc()">
+                <br>
+                <br>
+                    Output: <span id="copyOut"></span>
+                </p>
+        </div>
+        <div>
+                <p>9. Problem 9 - swap First and Last element of a given array of integers!</p>
+                <p>
+                    Enter Array Elements : <input type="text" id="arrayInp" onchange="addArray()">
+                <br>
+                <br>
+                Array Values: <span id="arrayDisp"></span>
+                <br>
+                <br>
+                <button type="submit" onclick="swapArr()">Swap First and Last Element!</button>
+                <br>
+                <br>
+                    after swapping the array is: <span id="arrOut"></span>
+                </p>
+        </div>
+        <div>
+                <p>10. Problem 10 - Reverse a NUmber</p>
+                <p>
+                    Enter Number : <input type="text" id="revInput" onchange="revFunc()">
+                <br>
+                <br>
+                    after reversing the number is: <span id="revOutput"></span>
+                </p>
+        </div>
+        <div>
+                <p>11. Problem 11 - Arrange Letters of a word alphabetically!</p>
+                <p>
+                    Enter Word : <input type="text" id="alphInput" onchange="alphFunc()">
+                <br>
+                <br>
+                    arranging alphabetically, we get is: <span id="alphOutput"></span>
+                </p>
+        </div>
+        <div>
+            <p>
+                12. Problem 12 - Longest word, unique characters and ocurences of each char!
+            </p>
+            <p>
+                Enter the Sentence : <input type="text" id="stringInp" onchange="stringFunc()">
+                <br>
+                <br>
+                The longest word is: <span id="stringOut1"> </span>
+                <br>
+                <br>
+                The unique characters in the string are: <span id="stringOut2"> </span>
+                <br>
+                <br>
+                The occurences of each character in the string are: <span id="stringOut3"> </span>
+            </p>
+        </div>
+        <div>
+                <p>
+                    13. Problem 12 - Generate Randon String of 8 characters!
+                </p>
+                <p>
+                    <br>
+                    The random string is: <span id="randString1"> </span>
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div>
+                    <p>
+                        14. Find Longest String in given string without repeating Characters!
+                    </p>
+                    <p>
+                        <br>
+                        The random string is: <span id="randString1"> </span>
+                        <br>
+                        <br>
+                    </p>
+                </div>
+    </body>
+</html>
