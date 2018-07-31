@@ -151,31 +151,70 @@ function stringFunc() {
     document.getElementById("stringOut1").textContent = longestWord;
 
     var stringInp1=stringInp;
-    var uniqchars="";
+    var unqString="";
 
     for (var x=0;x < stringInp1.length;x++)
     {
-   
-     if(uniqchars.indexOf(str.charAt(x))==-1)
-      {
-        uniqchars += str[x];  
-      
-       }
-    }
-      return uniqchars;  
-}
-
-    var unqString = arrayCharInput1.toString();
-    while (unqString.indexOf(",") > 0) {
-        unqString = unqString.replace(',','');
+        if(unqString.indexOf(stringInp1.charAt(x))==-1)
+        {
+            if (stringInp1[x] != " ")
+            {
+                unqString += stringInp1[x];
+            }
+        }
     }
     document.getElementById("stringOut2").textContent=unqString;
+
+    var copy = stringInp.split("");
+    var arrayCharInput = unqString.split("");
+	var arrayCount = [];
+
+    var myCount;
+	// first loop goes over every element
+	for (var i = 0; i < arrayCharInput.length; i++) {
+ 
+		myCount = 0;
+		// loop over every element in the copy and see if it's the same
+		for (var w = 0; w < copy.length; w++) {
+            if (arrayCharInput[i] == copy[w]) {
+				// increase amount of times duplicate is found
+				myCount++;
+				// sets item to undefined
+				delete copy[w];
+			}
+		}
+ 
+		if (myCount > 0) {
+			var a = new Object();
+            a.value = arrayCharInput[i];
+			a.count = myCount;
+			arrayCount.push(a);
+		}
+    }
+    
+    var ArrayString = JSON.stringify(arrayCount);
+    document.getElementById("stringOut3").textContent=ArrayString;
+
+};
+
+function stringNonRptFunc(){
+    var stringInp2 = document.getElementById("stringInp2").value;
+    var copy1 = stringInp2.split("");
+    var lenght = copy1.length / 2;
+
+    for (var k = 0; k < copy1.length; k++) {
+        if (copy1[k] == copy1[k+1]) {
+            if (k > lenght) {
+                var longstStr = stringInp2.substring(0, k);
+            }
+            else {
+                var longstStr = stringInp2.substring(k+2, copy1.length);
+            }
+        }
+    };
+    document.getElementById("stringOut4").textContent=longstStr;
 }
 
-function makeid() {
-
-  }
-  
 setTimeout(() => {
 
     var curDay = curDate.getDay();
